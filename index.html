@@ -2,7 +2,21 @@
 <html>
 <head>
 <title>React Class</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<style>
+  span.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+  </style>
 <body>
 
 <h1>My First Heading</h1>
@@ -29,13 +43,89 @@
     <input type="date">
     <label for="cars">Choose a car:</label>
 
-    <select name="cars" id="cars" multiple="true">
+    <select name="cars" id="cars" multiple>
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="mercedes">Mercedes</option>
       <option value="audi">Audi</option>
     </select>
 </form>
+
+
+<div class="div-a"> 
+    <ul class="ul-a">
+      <li class="li-a">
+        <a class="a-tag" href="#test">test</a>
+      </li>
+    </ul>
+</div>
+<!-- <p style="color: gray;"> test</p> -->
+<p class="color-p"> test</p>
+
+<span class="dotted">A dotted border.</span>
+<p class="dashed" style="width: 50%;">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<!-- <div >
+    <ul>
+      <li>
+        <a href="#test">test</a>
+      </li>
+    </ul>
+</div> -->
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+
+<div class="center">
+  <p>Hello World!</p>
+</div>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section class="intro">
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+  <p class="intro">This is an introduction.</p>
+  <i class="bi bi-caret-down-fill"></i>
+</div>
 </body>
 </html>
 
