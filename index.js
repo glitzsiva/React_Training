@@ -5,9 +5,9 @@ const func =()=>{
     console.log(i);
     return "test"
 }
-console.log(12);
-console.log( func , "func")
-console.log( func(), "func 2" )
+// console.log(12);
+// console.log( func , "func")
+// console.log( func(), "func 2" )
 
 
 var x= 1
@@ -27,13 +27,13 @@ Boolean
 
 [1, 3]//Array
 const test= { id:1,}// object
-console.log(test)
+// console.log(test)
 
 test.age = 12;
-console.log(test)
+// console.log(test)
 
 let carName;
-console.log(carName)
+// console.log(carName)
 
 console.log(1 == "1" ,"==");
 console.log(1 === "1");
@@ -41,7 +41,7 @@ n=5
 
 let val = n>6 ? '$2.00' : '$10.00'
 
-console.log(typeof val, val)
+// console.log(typeof val, val)
 
 
 function funcNew (args){
@@ -50,7 +50,7 @@ return args *2
 }
 
 let new1 = funcNew;
-console.log(new1(8), "funcNew");
+// console.log(new1(8), "funcNew");
 
 
 const arrowFunc =(args) =>{
@@ -58,7 +58,7 @@ const arrowFunc =(args) =>{
     return  args+2
 }
 
-console.log(arrowFunc(3),"arrowFunc")
+// console.log(arrowFunc(3),"arrowFunc")
 
 
 // const obj ={
@@ -92,24 +92,27 @@ const set ={
 set.oldFunc()
 
 
-console.log(set.age);
+// console.log(set.age);
 
-const person ={
+// const person ={
 
-    fistName:"siva",
-    lastName:"hari"
-} // new Object()
+//     firstName:"siva",
+//     lastName:"hari"
+// } // new Object()
 
-person.gender= "Male"
+// person.gender= "Male"
+
+// console.log(person["firstName"], "test name")
 
 
-console.log(person,"person");
+
+// console.log(person,"person");
 
 // set.person = {
 //     gender:"male"
 // }
 
-set.person = person
+// set.person = person
 
 set.bodyParts= ["head", "neck"]
 set.habits= undefined
@@ -119,7 +122,7 @@ set.habits= undefined
 set.age=40;
 
 delete set.age
-console.log(set, "set")
+// console.log(set, "set")
 
 
 const setName =()=>{
@@ -131,20 +134,44 @@ setName()
 
 
 
-console.log(set, "set")
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+console.log(person.fullName(),"fullName" )
+
+
+
+
+
+// console.log(set, "set")
 
 
 value ="test"
 
 const objTest = {
     value: 10,
+    normalFunc:function (){
+      console.log(this.value,"this.value normal ");
+    },
     arrowFunc: () => {
-      console.log(this.value,"this.value"); // 'this' refers to the context where obj was defined
+      console.log(this.value,"this.value arrow"); // 'this' refers to the context where obj was defined
     }
 };
+
+
   
   objTest.arrowFunc()
+  objTest.normalFunc()
 
+
+  // document.onload(console.log(123,"onLoad"))
 
 // Normal function
 function Person(name) {
@@ -152,12 +179,12 @@ function Person(name) {
     this.sayName = function() {
       console.log(this.name);
     };
-  }
+}
   
   const person1 = new Person('Alice');
   person1.sayName(); // Output: Alice
   
-  // Arrow function
+  // Arrow function Fails
   const PersonArrow = (name) => {
     this.name = name;
     this.sayName = () => {
@@ -169,6 +196,11 @@ function Person(name) {
     const person2 = new PersonArrow('Bob'); 
     person2.sayName();
   } catch (e) {
-    console.log(e.message); 
+    console.log(e.message, "error"); 
   }
-  
+
+
+  let text = "a,b,c,d,e,f";
+const myArray = text.split("b");
+
+console.log(myArray, "myArray");
