@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+
+</head>
+<body>
+
+<form onsubmit="formOnSubmit(event)">
+  <div>
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" class="text-input" name="userName" value="siva" />
+  </div>
+
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" />
+  </div>
+
+  <div>
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </div>
+
+
+
+  <div>
+    <p>Hobbies:</p>
+    <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+    <label for="hobby1">Reading</label>
+    <input type="checkbox" id="hobby2" name="hobbies" value="travelling">
+    <label for="hobby2">Travelling</label>
+    <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+    <label for="hobby3">Sports</label>
+  </div>
+
+  <div>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="uk">UK</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="languages">Languages Known:</label>
+    <select id="languages" name="languages" multiple>
+      <option value="english">English</option>
+      <option value="spanish">Spanish</option>
+      <option value="french">French</option>
+      <option value="german">German</option>
+    </select>
+  </div>
+
+  <input type="file" id="fileInput" name="fileInput" multiple/>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+<form id="userForm">
+    <div>
+      <label for="password">User Name:</label>
+      <input type="password" id="userName" class="text-input" name="password" value="siva" onchange="onChangePassword(event)" />
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+
+<script src="form.js"></script>
+</body>
+</html>

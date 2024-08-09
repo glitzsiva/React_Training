@@ -75,4 +75,11 @@ td:hover{
     font-size: 30px;
   }
 
+.text-input{
+    padding: 6px 10px;
+    border-color: green ;
+}
 
+.text-input:focus, .text-input:active, .input-text:focus-visible {
+    border-color: red !important;
+}
